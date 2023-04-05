@@ -40,26 +40,33 @@ function Loan() {
                                             <Option value="1year">1 Year</Option>
                                         </Select>
                                     </Form.Item>
-                                    <Form.Item label="Price" name='amount'>
-                                        <Input type='text' placeholder="input placeholder"  />
-                                    </Form.Item>
                                     <Form.Item>
-                                        <Button type="primary" htmlType="submit">Submit</Button>
+                                        <Button style={{backgroundColor:"#5B2C6F", color:"#fff"}} htmlType="submit">Submit</Button>
                                     </Form.Item>
                                 </Col>
                                 <Col span={12}>
-                                    <Card
-                                        title="Current Plan"
-                                    >
+                                <Form.Item label="Price" name='amount'>
+                                        <Input type='text' placeholder="input placeholder"  />
+                                    </Form.Item>
+                                </Col>
+
+                            </Row>
+
+                        </Form>
+                    </Card>
+                    <br />
+                    <Card title="Current Plan">
+                    <Row>
+                            <Col span={12}>
                                         <p>Installment Plan <Badge count={plan} /> </p>
-                                        <p>Price <Badge count={amount}
+                                </Col>
+                                <Col span={12}>
+                                <p>Price <Badge count={amount}
                                             style={{
                                                 backgroundColor: '#52c41a',
                                             }} /></p>
-                                    </Card>
-                                </Col>
+                                    </Col>
                             </Row>
-                        </Form>
                     </Card>
 
                 </div>

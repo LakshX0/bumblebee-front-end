@@ -11,24 +11,29 @@ function Dashboard() {
     return (
         <>
             <div className="row">
-                <table border="0">
+                <table border="0" style={{width:"78vw"}}>
+                    <tr>
                     <td>
-                    <div className='col-12-sm'>
-                    <div className='px-5 py-5 mb-5 bg-red text-red full-width'>
+                    <div className='col-4-sm'>
+                    <div className='px-5 py-5 mb-5 bg-royal-blue text-royal-blue'>
                         <center>
                         <UserOutlined className='card-icon' />
                         <div className='quantity-count'>04</div>
                         <div className='quantity-property'> Users</div>
                         </center>
                     </div>
-                    <div className='px-5 mb-5 py-5 bg-blue text-blue full-width'>
+                    </div>
+                    <div className='col-4-sm'>
+                    <div className='px-5 mb-5 py-5 bg-royal-blue text-royal-blue'>
                     <center>
                         <SkinOutlined className='card-icon' />
                         <div className='quantity-count'>2</div>
                         <div className='quantity-property'> Orders</div>
                         </center>
                     </div>
-                    <div className='px-5 py-5 bg-green text-green full-width'>
+                    </div>
+                    <div className='col-4-sm'>
+                    <div className='px-5 py-5 bg-royal-blue text-royal-blue'>
                     <center>
                         <ShoppingOutlined className='card-icon' />
                         <div className='quantity-count'>3</div>
@@ -37,6 +42,7 @@ function Dashboard() {
                     </div>
                 </div>
                     </td>
+                    </tr>
                     <td>
                     <div className='col-12-sm px-6 mx-5'>
                         <IncomeChart />

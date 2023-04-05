@@ -6,25 +6,13 @@
     margin: auto;
     padding: auto;
 }
-.bg-blue{
-    background-color: #2470a334;
+.bg-royal-blue{
+    background-color: #5B2C6F34;
 }
-.text-blue{
-    color: #2471A3;
+.text-royal-blue{
+    color: #5B2C6F;
 }
 
-.bg-red{
-    background-color: #B03A2E34;
-}
-.text-red{
-    color: #B03A2E;
-}
-.bg-green{
-    background-color: #28B46334;
-}
-.text-green{
-    color: #28B463;
-}
 .card-icon{
     font-size: 64px;
 }

@@ -11,14 +11,28 @@ class IncomeChart extends Component {
           id: "basic-bar"
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+          categories: ["2023-03-01", "2023-03-02", "2023-03-03", "2023-03-04"]
+        },
+        plotOptions: {
+          bar: {
+            colors: {
+              ranges: [{
+                from: 0,
+                to: 100,
+                color: '#5B2C6F'
+              }]
+            },
+            fill: {
+              colors: ['#5B2C6F']
+            }
+          }
         }
       },
       series: [
         {
-          name: "series-1",
-          data: [30, 40, 45, 50, 49, 60, 70, 91]
-        }
+          name: "Sales",
+          data: [3, 2, 1, 2]
+        },
       ]
     };
   }
@@ -30,7 +44,8 @@ class IncomeChart extends Component {
               options={this.state.options}
               series={this.state.series}
               type="bar"
-              width="800"
+              width="1000"
+              height="400"
             />
 
     );

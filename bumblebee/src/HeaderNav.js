@@ -12,7 +12,7 @@ function HeaderNav() {
     <Header className="dashboard-header">
       <div className="logo">
         <Avatar size="large" src={<img src={logo} alt="avatar" />}/>
-        <span className="company-name">Bumblebee</span>
+        <span className="company-name" style={{color:'white'}}>Bumblebee</span>
       </div>
       <div className="header-right">
         <Badge count={0}>

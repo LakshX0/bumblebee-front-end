@@ -61,8 +61,9 @@ function SideMenu(){
     <Menu
         onClick={onClick}
         style={{
-          width: 256,
-          height:"90vh",
+          width: 200,
+          height:"91vh",
+          backgroundColor:"#5B2C6F34"
         }}
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
@@ -84,8 +85,8 @@ function Content(){
         <Route path='/order' element={<OrderList/>}></Route>
         {/* <Route path='/loan' element={<div>Home</div>}></Route> */}
         <Route path='/loan' element={<Loan/>}></Route>
-        {/* <Route path='/login' element={<LoginPage/>} ></Route>
-        <Route path='/register' element={<Register/>} ></Route> */}
+        <Route path='/login' element={<LoginPage/>} ></Route>
+        <Route path='/register' element={<Register/>} ></Route>
       </Routes>
     </div>
   );

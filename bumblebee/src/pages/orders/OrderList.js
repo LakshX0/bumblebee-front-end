@@ -13,21 +13,21 @@ const { Item } = Breadcrumb;
 const data = [
   {
     id: '1',
-    date: '2022-12-15',
-    product: 322345,
-    quantity: 10,
-    price: 100.12,
-    c_id: 123,
+    date: '2023-03-01',
+    product: 1,
+    quantity: 1,
+    price: 10000,
+    c_id: 2,
     tags: ['Active'],
   },
   {
     id: '2',
-    date: '2022-12-15',
-    product: 322345,
-    quantity: 10,
-    price: 100.12,
-    c_id: 123,
-    tags: ['Active'],
+    date: '2023-03-16',
+    product: 3,
+    quantity: 1,
+    price: 37500,
+    c_id: 2,
+    tags: ['Deactive'],
   },
   {
     id: '3',
@@ -37,17 +37,7 @@ const data = [
     price: 100.12,
     c_id: 123,
     tags: ['Active'],
-  },
-  {
-    id: '4',
-    date: '2022-12-15',
-    product: 322345,
-    quantity: 10,
-    price: 100.12,
-    c_id: 123,
-    tags: ['Deactive'],
-  },
-
+  }
 ];
 
 function OrderList() {

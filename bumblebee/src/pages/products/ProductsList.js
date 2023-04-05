@@ -13,41 +13,33 @@ const { Item } = Breadcrumb;
 const data = [
   {
     id: '1',
-    price: 50.95,
-    name: '',
+    price: 10000,
+    name: '3.1',
     quantity: 2,
     brand:"Nokia",
     category:"Mobile"
   },
   {
     id: 2,
-    price: 100,
-    name: '',
-    quantity: 2,
-    brand:"Nokia",
+    price: 15000,
+    name: 'Galaxy One',
+    quantity: 3,
+    brand:"Samsung",
     category:"Mobile"
   },
   {
     id: 3,
-    price: 5199,
-    name: '',
-    quantity: 2,
-    brand:"Nokia",
+    price: 12500,
+    name: 'J2',
+    quantity: 5,
+    brand:"Samsung",
     category:"Mobile"
   },
   {
     id: 4,
-    price: 1000,
-    name: '',
-    quantity: 2,
-    brand:"Nokia",
-    category:"Mobile"
-  },
-  {
-    id: 5,
-    price: 872.50,
-    name: '',
-    quantity: 2,
+    price: 13750,
+    name: 'Xpress Music 7200',
+    quantity: 1,
     brand:"Nokia",
     category:"Mobile"
   },
@@ -226,7 +218,7 @@ function ProductsList() {
     <div className='page-container'>
       <div className="breadcrumb">
       <h3>Product List</h3>
-      <Button type="primary" onClick={showDrawer}>Add Product</Button>
+      <Button onClick={showDrawer} style={{backgroundColor:"#5B2C6F", color:"#fff"}}>Add Product</Button>
     </div>
     <Drawer 
     title="Add User" 
