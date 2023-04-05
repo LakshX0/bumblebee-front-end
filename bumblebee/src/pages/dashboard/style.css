@@ -1,0 +1,52 @@
+.full-width{
+    width: 100% !important;
+}
+.content-card{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+.bg-royal-blue{
+    background-color: #5B2C6F34;
+}
+.text-royal-blue{
+    color: #5B2C6F;
+}
+
+.card-icon{
+    font-size: 64px;
+}
+.quantity-count{
+    font-size: 24px;
+    font-weight: 900;
+}
+.quantity-property{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.px-5{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.px-6{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.py-5{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mb-5{
+    margin-bottom: 2rem;
+}
+.mx-5{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.mx-6{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}

@@ -1,0 +1,47 @@
+.dashboard-header {
+    background-color: #5B2C6F;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo .company-name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 8px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right .notification-icon {
+    font-size: 24px;
+    color: #999;
+    margin-left: 24px;
+  }
+  
+  .header-right .notification-icon:hover {
+    color: #1890ff;
+  }
+  
+  .ant-menu-item{
+    padding: 30px 24px !important;
+  }
+
+  :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light .ant-menu-item-selected, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu .ant-menu-item-selected{
+    background-color: #5B2C6F;
+  }
+
+  :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light .ant-menu-item-selected, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu .ant-menu-item-selected{
+    color: #fff;
+  }
