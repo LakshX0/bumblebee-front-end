@@ -1,13 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import './Grid.css';
 import {Menu} from "antd"
-import { MailOutlined, SettingOutlined, AppstoreOutlined, UserOutlined, ShoppingOutlined, SkinOutlined  } from '@ant-design/icons';
+import { MailOutlined, SettingOutlined, AppstoreOutlined, UserOutlined, ShoppingOutlined, SkinOutlined, DollarCircleOutlined  } from '@ant-design/icons';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import HeaderNav from './HeaderNav';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import UsersList from './pages/users/UsersList'
 import ProductsList from './pages/products/ProductsList'
 import OrderList from './pages/orders/OrderList';
+import Loan from './pages/loan/Loan';
+import Dashboard from './pages/dashboard/Dashboard';
+import LoginPage from './pages/auth/LoginPage';
+import Register from './pages/auth/Register';
 function getItem(label, key, icon, children, type) {
   return {
     key,
@@ -22,6 +29,7 @@ const items = [
   getItem('Users', 'user', <UserOutlined  />),
   getItem('Products', 'product', <SkinOutlined />),
   getItem('Orders', 'order', <ShoppingOutlined />),
+  getItem('Loans', 'loan', <DollarCircleOutlined />),
   // getItem('Navigation One', 'sub1', <MailOutlined />, [
   //   getItem('Item 1', 'g1', null, [getItem('Option 1', '1'), getItem('Option 2', '2')], 'group'),
   //   getItem('Item 2', 'g2', null, [getItem('Option 3', '3'), getItem('Option 4', '4')], 'group'),
@@ -66,14 +74,18 @@ function SideMenu(){
 }
 
 function Content(){
+
   return(
     <div>
       <Routes>
-        <Route path='/dashboard' element={<div>dashboard</div>}></Route>
+        <Route path='/dashboard' element={<Dashboard/>}></Route>
         <Route path='/user' element={<UsersList/>}></Route>
         <Route path='/product' element={<ProductsList/>}></Route>
         <Route path='/order' element={<OrderList/>}></Route>
-        <Route path='/home' element={<div>Home</div>}></Route>
+        {/* <Route path='/loan' element={<div>Home</div>}></Route> */}
+        <Route path='/loan' element={<Loan/>}></Route>
+        {/* <Route path='/login' element={<LoginPage/>} ></Route>
+        <Route path='/register' element={<Register/>} ></Route> */}
       </Routes>
     </div>
   );

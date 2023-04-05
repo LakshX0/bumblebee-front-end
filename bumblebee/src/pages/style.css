@@ -8,6 +8,6 @@
   width: 100%;
 }
 
-.ant-table{
+.ant-table, .full-width-card{
     width: 80vw;
 }
